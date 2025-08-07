@@ -4,7 +4,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 # Recommended
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "8458606362:AAHmL-RV9Pq-14WwuE5pzm3HNrUV_NIaeko")
 APP_ID = int(os.environ.get("APP_ID", "24828197"))
 API_HASH = os.environ.get("API_HASH", "d36e278e89ebeb900aeda4128d413a77")
 
@@ -13,8 +13,8 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "7660990923"))
 PORT = os.environ.get("PORT", "8080")
 
 # Database
-DB_URI = os.environ.get("DB_URI", "")
-DB_NAME = os.environ.get("DB_NAME", "link")
+DB_URI = os.environ.get("DB_URI", "mongodb+srv://Krishna:krishna@cluster0.ecime.mongodb.net/")
+DB_NAME = os.environ.get("DB_NAME", "animeboylink")
 
 #Auto approve 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()] # dont change anything 
@@ -57,7 +57,7 @@ DATABASE_CHANNEL = int(os.environ.get("DATABASE_CHANNEL", "-1002836984967")) # C
 
 try:
     ADMINS = []
-    for x in (os.environ.get("ADMINS", "2089948673").split()):
+    for x in (os.environ.get("ADMINS", "7660990923").split()):
         ADMINS.append(int(x))
 except ValueError:
     raise Exception("Your Admins list does not contain valid integers.")
