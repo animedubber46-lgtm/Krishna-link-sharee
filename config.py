@@ -18,32 +18,32 @@ DB_NAME = os.environ.get("DB_NAME", "animeboylink")
 
 #Auto approve 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()] # dont change anything 
-TEXT = environ.get("APPROVED_WELCOME_TEXT", "<b>{mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.\n\‣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @NEW_ANIMES_HINDI_DUB_INDIA</b>")
+TEXT = environ.get("APPROVED_WELCOME_TEXT", "<b>{mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.\n\‣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @I_AM_DUBBING_AI</b>")
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Default
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "40"))
 #--- ---- ---- --- --- --- - -- -  - - - - - - - - - - - --  - -
 # Messages
-START_MSG = os.environ.get("START_MESSAGE", "<b>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇᴅ ʟɪɴᴋs sʜᴀʀɪɴɢ ʙᴏᴛ. ᴡɪᴛʜ ᴛʜɪs ʙᴏᴛ, ʏᴏᴜ ᴄᴀɴ sʜᴀʀᴇ ʟɪɴᴋs ᴀɴᴅ ᴋᴇᴇᴘ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟs sᴀғᴇ ғʀᴏᴍ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs.\n\n<blockquote>‣ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/SECRECT_BOT_UPDATES'> Sᴇᴄʀᴇᴄᴛ 𝐁ᴏᴛ 𝐔ᴘᴅᴀᴛᴇs</a></blockquote></b>")
-HELP = os.environ.get("HELP_MESSAGE", "<b><blockquote expandable>» Creator: <a href=https://t.me/NEW_ANIMES_HINDI_DUB_INDIA>ANIME</a>\n» Our Community: <a href=https://t.me/in_hindi_dub_korean_drama>INDIA Network</a>\n» Anime Channel: <a href=https://t.me/NEW_ANIMES_HINDI_DUB_INDIA>Anime INDIA</a>\n» Ongoing Kdrama: <a href=https://t.me/in_hindi_dub_korean_drama>Ongoing Kdrama</a>\n» Developer: <a href=https://t.me/SECRECT_BOT_UPDATES> Sᴇᴄʀᴇᴄᴛ 𝐁ᴏᴛ 𝐔ᴘᴅᴀᴛᴇs</a></b>")
-ABOUT = os.environ.get("ABOUT_MESSAGE", "<b><blockquote expandable>This bot is developed by Yato (@SECRECT_BOT_UPDATES) to securely share Telegram channel links with temporary invite links, protecting your channels from copyright issues.</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇᴅ ʟɪɴᴋs sʜᴀʀɪɴɢ ʙᴏᴛ. ᴡɪᴛʜ ᴛʜɪs ʙᴏᴛ, ʏᴏᴜ ᴄᴀɴ sʜᴀʀᴇ ʟɪɴᴋs ᴀɴᴅ ᴋᴇᴇᴘ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟs sᴀғᴇ ғʀᴏᴍ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs.\n\n<blockquote>‣ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/+tU57Z7o0Az5mZThl'> 𝐒𝐡𝐢𝐯𝐚𝐦 𝐁𝐨𝐭 𝐔𝐩𝐝𝐚𝐭𝐞𝐬</a></blockquote></b>")
+HELP = os.environ.get("HELP_MESSAGE", "<b><blockquote expandable>» Creator: <a href=https://t.me/+tU57Z7o0Az5mZThl</a>\n» Our Community: <a href=https://t.me/fivestar_animes>Five Star Network</a>\n» Anime Channel: <a href=https://t.me/fivestar_animes>Five Star</a>\n» Ongoing Kdrama: <a href=https://t.me/fivestar_animes>Ongoing Kdrama</a>\n» Developer: <a href=https://t.me/I_AM_DUBBING_AI> AI</a></b>")
+ABOUT = os.environ.get("ABOUT_MESSAGE", "<b><blockquote expandable>This bot is developed by AI (@I_AM_DUBBING_AI) to securely share Telegram channel links with temporary invite links, protecting your channels from copyright issues.</b>")
 
 ABOUT_TXT = """<b>›› ᴄᴏᴍᴍᴜɴɪᴛʏ: <a href='https://t.me/NEW_ANIMES_HINDI_DUB_INDIA'>INDIA</a>
-<blockquote expandable>›› ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ: <a href='https://t.me/SECRECT_BOT_UPDATES'>Cʟɪᴄᴋ ʜᴇʀᴇ</a>
-›› ᴏᴡɴᴇʀ: <a href='https://t.me/SECRECT_BOT_UPDATES'>ʏᴀᴛᴏ</a>
+<blockquote expandable>›› ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ: <a href='https://t.me/+tU57Z7o0Az5mZThl'>Cʟɪᴄᴋ ʜᴇʀᴇ</a>
+›› ᴏᴡɴᴇʀ: <a href='https://t.me/+tU57Z7o0Az5mZThl'>AI</a>
 ›› ʟᴀɴɢᴜᴀɢᴇ: <a href='https://docs.python.org/3/'>Pʏᴛʜᴏɴ 3</a>
 ›› ʟɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ ᴠ2</a>
 ›› ᴅᴀᴛᴀʙᴀsᴇ: <a href='https://www.mongodb.com/docs/'>Mᴏɴɢᴏ ᴅʙ</a>
-›› ᴅᴇᴠᴇʟᴏᴘᴇʀ: @SECRECT_BOT_UPDATES</b></blockquote>""" # agli baar se koi repo public nhi krunga!!
+›› ᴅᴇᴠᴇʟᴏᴘᴇʀ: @I_AM_DUBBING_AI</b></blockquote>""" # agli baar se koi repo public nhi krunga!!
 
-CHANNELS_TXT = """<b>›› ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ: <a href='https://t.me/NEW_ANIMES_HINDI_DUB_INDIA'>ᴀɴɪᴍᴇ india</a>
-<blockquote expandable>›› ᴍᴏᴠɪᴇs: <a href='https://t.me/in_hindi_dub_korean_drama'>Kdrama</a>
+CHANNELS_TXT = """<b>›› ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ: <a href='https://t.me/fivestar_animes'>Five Star Animes</a>
+<blockquote expandable>›› ᴍᴏᴠɪᴇs: <a href='https://t.me/fivestar_animes'>Kdrama</a>
 ›› Botchannel: <a href='https://t.me/SECRECT_BOT_UPDATES'>Botchannel</a>
-›› ᴀᴅᴜʟᴛ ᴄʜᴀɴɴᴇʟs: <a href='https://t.me/HENTAI_NAGARI'>ᴄᴏʀɴʜᴜʙ</a>
-›› ᴍᴀɴʜᴡᴀ ᴄʜᴀɴɴᴇʟ: <a href='https://t.me/HENTAI_NAGARI'>ᴘxʀɴʜ</a>
-›› ᴄᴏᴍᴍᴜɴɪᴛʏ: <a href='https://t.me/NEW_ANIMES_HINDI_DUB_INDIA'>ANIME INDIA</a>
-›› ᴅᴇᴠᴇʟᴏᴘᴇʀ: @SECRECT_BOT_UPDATES</b></blockquote>""" # agli baar se koi repo public nhi krunga!!
+›› ᴀᴅᴜʟᴛ ᴄʜᴀɴɴᴇʟs: <a href='https://t.me/Hanime_Official_Tv'>ᴄᴏʀɴʜᴜʙ</a>
+›› ᴍᴀɴʜᴡᴀ ᴄʜᴀɴɴᴇʟ: <a href='https://t.me/Hanime_Official_Tv'>ᴘxʀɴʜ</a>
+›› ᴄᴏᴍᴍᴜɴɪᴛʏ: <a href='https://t.me/fivestar_animes'>ANIME FIVE STAR</a>
+›› ᴅᴇᴠᴇʟᴏᴘᴇʀ: @I_AM_DUBBING_AI</b></blockquote>""" # agli baar se koi repo public nhi krunga!!
 
 #--- ---- ---- --- --- --- - -- -  - - - - - - - - - - - --  - -
 # Default
